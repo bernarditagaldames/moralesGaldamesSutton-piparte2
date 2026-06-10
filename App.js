@@ -13,7 +13,11 @@ export default function App() {
     <Stack.Navigator> 
       <Stack.Screen name="Login" component={Login} options={ {headerShown:false}}/> 
       <Stack.Screen name="Register" component={Register} options={ {headerShown:false}}/> 
-    </Stack.Navigator> </NavigationContainer> ); } 
+      <Stack.Screen name="homeMenu" component={homeMenu} options={{headerShown:false}}/>
+    </Stack.Navigator> 
+  </NavigationContainer> 
+  ); 
+} 
     
     
 const styles = StyleSheet.create({ 
