@@ -6,8 +6,7 @@ function CrearPosteo(props) {
   const [descripcion, setDescripcion] = useState("");
   const [error, setError] = useState("");
 
-  const crearPosteo = () => {
-    
+  function onSubmit() {
     db.collection("posts")
       .add({
         creador : auth.currentUser.email,
@@ -38,7 +37,7 @@ function CrearPosteo(props) {
 
       {error !== "" ? <Text> {error} </Text> : null}
 
-      <Pressable onPress={crearPosteo}>
+      <Pressable onPress={onSubmit}>
         <Text> Publicar </Text>
       </Pressable>
     </View>
