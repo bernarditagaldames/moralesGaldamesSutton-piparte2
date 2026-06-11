@@ -10,13 +10,13 @@ export default function Login(props){
     function validar(){
         if(!email.includes("@")){
             setError("Ingresa una direccion de email");
-            return false
+            return false;
         }
         if (password.length<6){
             setError("La contraseña debe tener un minimo de 6 caracteres");
             return false;
         }
-        return true
+        return true;
     }
 
     function onSubmit(){
