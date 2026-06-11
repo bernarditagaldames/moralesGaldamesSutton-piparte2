@@ -5,14 +5,14 @@ import CrearPosteo from "../../screens/CrearPosteo/CrearPosteo";
 import { FontAwesome } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
-import {ComentarioStack} from "../ComentarioStack/ComentarioStack";
+import ComentarioStack from "../ComentarioStack/ComentarioStack";
 
 
 const Tab = createBottomTabNavigator();
 
 export default function HomeMenu(){
     return(
-        <Tab.Navigator screenOptions={{tabBarShowLabel: false}}>
+        <Tab.Navigator screenOptions={{tabBarShowLabel: false, headerShown: false}}>
             <Tab.Screen name="Home" component={Home} options={
                 {tabBarIcon: () => <FontAwesome name="home" size={24} color="black"/>}
             }/>

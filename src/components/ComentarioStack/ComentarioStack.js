@@ -1,4 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import ComentarPosteo from "../../screens/ComentarPosteo/ComentarPosteo";
 
 const Stack = createNativeStackNavigator();
 

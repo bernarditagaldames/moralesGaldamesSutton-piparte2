@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
 
   link: {
-    color: "blue",
+    color: "black",
     textAlign: "center",
     marginTop: 20,
   },
