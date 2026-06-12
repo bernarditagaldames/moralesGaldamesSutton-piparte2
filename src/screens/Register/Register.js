@@ -16,8 +16,18 @@ function Register(props) {
       return;
     }
 
+    if (!email.includes("@")) {
+      setErrorR("Email mal formateado, @ es necesario");
+      return;
+    }
+
     if (password === "") {
       setErrorR("La contraseña es obligatoria");
+      return;
+    }
+
+    if (password.length < 6) {
+      setErrorR("La contraseña debe tener al menos 6 caracteres");
       return;
     }
 
@@ -44,10 +54,6 @@ function Register(props) {
             setErrorR("Error en el registro");
           });
       })
-      .catch((err) => {
-        setErrorR(err.message);
-        console.log(err);
-      });
   }
 
   return (
