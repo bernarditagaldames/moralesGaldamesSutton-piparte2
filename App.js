@@ -3,7 +3,7 @@ import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack"; 
 import Login from "./src/screens/Login/Login"; 
 import Register from "./src/screens/Register/Register"; 
-import homeMenu from "./src/components/homeMenu/homeMenu"; 
+import HomeMenu from "./src/components/homeMenu/homeMenu"; 
 
 const Stack = createNativeStackNavigator(); 
 
@@ -13,7 +13,7 @@ export default function App() {
     <Stack.Navigator> 
       <Stack.Screen name="Login" component={Login} options={ {headerShown:false}}/> 
       <Stack.Screen name="Register" component={Register} options={ {headerShown:false}}/> 
-      <Stack.Screen name="homeMenu" component={homeMenu} options={{headerShown:false}}/>
+      <Stack.Screen name="homeMenu" component={HomeMenu} options={{headerShown:false}}/>
     </Stack.Navigator> 
   </NavigationContainer> 
   ); 
