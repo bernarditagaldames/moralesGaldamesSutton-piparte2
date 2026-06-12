@@ -6,7 +6,7 @@ export default function Post(props){
         <View style={styles.card}>
             <Text style={styles.owner}>{props.data.creador}</Text>
             <Text style={styles.descripcion}>{props.data.descripcion}</Text>
-            <Pressable style={styles.boton} onPress={() => props.navigation.navigate('ComentarPost', { id: props.id })}>
+            <Pressable style={styles.boton} onPress={() => props.navigation.navigate('ComentarPosteo', { id: props.id })}>
                 <Text style={styles.botonTexto}>Comentar</Text>
             </Pressable>
         </View>

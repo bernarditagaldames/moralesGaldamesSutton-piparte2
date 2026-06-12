@@ -8,6 +8,6 @@ export default function ComentarioStack(){
     return(
     <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={Home}/>
-        <Stack.Screen name="Comentar posteo" component={ComentarPosteo}/>
+        <Stack.Screen name="ComentarPosteo" component={ComentarPosteo}/>
     </Stack.Navigator>
 )}
