@@ -34,10 +34,10 @@ export default function Home(props){
     }, []);
 
     return(
-        <View style={ {flex: 1}}>
+        <View style={styles.container}>
         {loading ? <ActivityIndicator size="large" color="#6C63FF"/> :
-            <View style={ {flex: 1}}>
-                <Text>Home</Text>
+            <View style={styles.inner}>
+                <Text style={styles.titulo}>Home</Text>
                 <FlatList
                     data={posts}
                     keyExtractor={item => item.id.toString()}
@@ -48,3 +48,20 @@ export default function Home(props){
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#F0F2F5',
+    },
+    inner: {
+        flex: 1,
+        padding: 16,
+    },
+    titulo: {
+        fontSize: 32,
+        fontWeight: 'bold',
+        color: '#1A1A2E',
+        marginBottom: 16,
+    }
+})
