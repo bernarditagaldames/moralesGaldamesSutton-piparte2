@@ -28,7 +28,7 @@ export default function Login(props){
             .then(res => {props.navigation.navigate("homeMenu");
 
             })
-            .catch(error =>{
+            .catch(error => {
                 setError("Credenciales incorrectas");
             })
     }

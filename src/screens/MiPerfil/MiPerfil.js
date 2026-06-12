@@ -22,7 +22,7 @@ export default function MiPerfil(props){
             }
         );
 
-        db.collection("posts").where("creador", "==", usuarioLogueado.email).orderBy("fechaDeCreacion", "desc").onSnapshot(
+        db.collection("posts").where("creador", "==", usuarioLogueado.email).onSnapshot(
             docs => {
                 let postsDelUsuario = [];
 
